@@ -10,4 +10,20 @@ include 'conexion_bd.php';
             VALUES('$nombre_completo', '$correo', '$usuario', '$contrasena')";
     $ejecutar = mysqli_query($conexion, $query);
 
+    if($ejecutar){
+        echo '
+        <script>
+        alert("Usuario almacenado exitosamente");
+        window.location = "../index.php";
+        </script>
+        ';
+    }else{
+        echo'
+        <script>
+        alert("Intentalo de nuevo,no almacenado");
+        window.location = "../index.php";
+        </script>
+        ';
+    }
+    mysqli_close($conexion);
 ?>
