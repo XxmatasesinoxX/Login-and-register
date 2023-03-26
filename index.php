@@ -29,7 +29,7 @@
                     <input type="password" placeholder="Contraseña">
                     <button>Entrar</button>
                 </form>
-                <form action="php/registro_usuarios.php" method="GET class="formulario__register">
+                <form action="php/registro_usuarios.php" method="GET" class="formulario__register">
                 <h2>Registrarse</h2>
                 <input type="text" placeholder="Nombre Completo"  name="nombre_completo">
                 <input type="text" placeholder="Correo Electronico" name="correo" >
