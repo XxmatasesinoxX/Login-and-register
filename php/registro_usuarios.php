@@ -4,6 +4,8 @@ include 'conexion_bd.php';
     $correo = $_GET['correo'];
     $usuario = $_GET['usuario'];
     $contrasena = $_GET['contrasena'];
+    //Encriptamiento de contraseña
+    $contrasena =hash('sha512',$contrasena);
 
 
     $query = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasena) 
